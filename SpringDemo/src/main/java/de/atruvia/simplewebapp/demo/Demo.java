@@ -18,6 +18,7 @@ public class Demo {
 
     private final BlacklistService blacklistService;
     private String message = "Hallo Welt"; // 2. FieldInjection
+    
     public Demo(@Value("${Demo.gruss}") String message, BlacklistService blacklistService) {  // 1. Construktor
         this.blacklistService = blacklistService;
         this.message = message;
